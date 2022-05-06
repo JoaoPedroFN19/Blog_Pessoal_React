@@ -19,7 +19,7 @@ function CadastroTema() {
     useEffect(() => {
         if (token == "") {
             alert("Você precisa estar logado")
-            history.push("/login")
+            history("/login")
     
         }
     }, [token])
@@ -72,7 +72,7 @@ function CadastroTema() {
         }
     
         function back() {
-            history.push('/temas')
+            history('/temas')
         }
   
     return (

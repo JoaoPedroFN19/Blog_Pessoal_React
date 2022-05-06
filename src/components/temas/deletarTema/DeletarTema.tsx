@@ -16,7 +16,7 @@ function DeletarTema() {
     useEffect(() => {
         if (token == "") {
             alert("Você precisa estar logado")
-            history.push("/login")
+            history("/login")
     
         }
     }, [token])
@@ -36,7 +36,7 @@ function DeletarTema() {
         }
 
         function sim() {
-            history.push('/temas')
+            history('/temas')
             deleteId(`/tema/${id}`, {
               headers: {
                 'Authorization': token
@@ -46,7 +46,7 @@ function DeletarTema() {
           }
         
           function nao() {
-            history.push('/temas')
+            history('/temas')
           }
           
   return (

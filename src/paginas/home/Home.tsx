@@ -14,7 +14,7 @@ function Home() {
     useEffect(() => {
       if (token == "") {
           alert("Você precisa estar logado")
-          history.push("/login")
+          history("/login")
   
       }
   }, [token])
