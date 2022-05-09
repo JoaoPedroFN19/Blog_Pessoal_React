@@ -8,7 +8,7 @@ import './CadastroUsuario.css';
 
 function CadastroUsuario() {
 
-    let history = useNavigate();
+    let navigate = useNavigate();
     const [confirmarSenha,setConfirmarSenha] = useState<String>("")
     const [user, setUser] = useState<User>(
         {
@@ -28,7 +28,7 @@ function CadastroUsuario() {
 
     useEffect(() => {
         if (userResult.id != 0) {
-            history("/login")
+            navigate("/login")
         }
     }, [userResult])
 
