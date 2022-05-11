@@ -7,6 +7,7 @@ import './ModalPostagem.css';
 import CadastroPost from '../cadastroPost/CadastroPost';
 
 
+
 function getModalStyle() {
   const top = 50 ;
   const left = 50;
@@ -73,4 +74,4 @@ function ModalPostagem () {
     </div>
   );
 }
-export default ModalPostagem;
+export default ModalPostagem
