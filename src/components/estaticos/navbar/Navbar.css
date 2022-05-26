@@ -1,8 +1,12 @@
 .cursor{
     cursor: pointer;
-    color: white;
+    color: White;
 }
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.corazul {
+    color: midnightblue;
 }
